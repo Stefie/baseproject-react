@@ -1,0 +1,16 @@
+@require '../_variables'
+@require '../_mixins'
+
+.page-nav
+	height $headerHeight
+	font-weight: bold
+	padding 0 $layoutSpace
+	> ul
+		display flex
+		justify-content flex-end
+		align-items center
+		text-transform uppercase
+		> li
+			padding $layoutSpace 0
+			+ li
+				margin-left $layoutSpaceHalf
