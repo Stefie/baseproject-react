@@ -9,7 +9,7 @@ class Footer extends React.Component {
 			<section className="tag-list">
 				<span>Some footer content</span>
 			</section>
-		)
+		);
 	}
 }
 ReactDOM.render(<Footer/>, document.getElementById('footer'));

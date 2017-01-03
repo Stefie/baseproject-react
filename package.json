@@ -1,24 +1,29 @@
 {
-  "name": "ES2015_playground",
+  "name": "Baseproject_webpack",
   "description": "Basic project setup with ES2015, react, Babel, pug2, stylus, gulp, aframe",
   "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "git@github.com:Stefie/es2015_playground.git"
+    "url": "git@github.com:Stefie/baseproject_webpack.git"
   },
   "scripts": {
-    "start": "webpack-dev-server --hot --inline --content-base app/"
+    "start": "webpack-dev-server --hot --inline --host 0.0.0.0",
+    "build": "webpack --config webpack.config.prod.js"
   },
   "keywords": [
     "ES2015",
     "babel",
     "react",
-    "playground"
+    "playground",
+    "webpack"
   ],
   "author": "Stefanie Doll",
   "license": "ISC",
   "devDependencies": {
-    "aframe": "^0.3.2",
+    "aframe": "^0.4.0",
+    "aframe-react": "^3.4.1",
+    "aframe-text-component": "^0.4.0",
+    "autoprefixer": "^6.6.1",
     "babel-cli": "^6.18.0",
     "babel-core": "^6.18.2",
     "babel-loader": "^6.2.7",
@@ -28,7 +33,10 @@
     "babel-preset-react": "^6.16.0",
     "babel-preset-stage-0": "^6.16.0",
     "file-loader": "^0.9.0",
+    "html-webpack-plugin": "^2.24.1",
     "jstransformer-babel": "^2.1.0",
+    "postcss-loader": "^1.2.1",
+    "poststylus": "^0.2.3",
     "pug": "^2.0.0-beta6",
     "pug-loader": "^2.3.0",
     "style-loader": "^0.13.1",
@@ -39,6 +47,8 @@
   },
   "dependencies": {
     "react": "^15.4.0",
-    "react-dom": "^15.4.0"
+    "react-dom": "^15.4.0",
+    "rucksack-css": "^0.9.1",
+    "webpack": "^1.14.0"
   }
 }

@@ -10,7 +10,7 @@ class Menu extends React.Component {
 			<ul>
 				{menuItems.map( (menuItem, index) => <li key={index}>{menuItem}</li>)}
 			</ul>
-		)
+		);
 	}
 }
 ReactDOM.render(<Menu/>, document.getElementById('menu'));
