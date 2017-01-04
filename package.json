@@ -7,7 +7,7 @@
     "url": "git@github.com:Stefie/baseproject_webpack.git"
   },
   "scripts": {
-    "start": "webpack-dev-server --hot --inline --host 0.0.0.0",
+    "start": "webpack-dev-server --hot --inline",
     "build": "webpack --config webpack.config.prod.js"
   },
   "keywords": [
@@ -39,6 +39,7 @@
     "postcss-loader": "^1.2.1",
     "poststylus": "^0.2.3",
     "pug": "^2.0.0-beta6",
+    "rucksack-css": "^0.9.1",
     "pug-loader": "^2.3.0",
     "style-loader": "^0.13.1",
     "stylus": "^0.54.5",
@@ -48,8 +49,6 @@
   },
   "dependencies": {
     "react": "^15.4.0",
-    "react-dom": "^15.4.0",
-    "rucksack-css": "^0.9.1",
-    "webpack": "^1.14.0"
+    "react-dom": "^15.4.0"
   }
 }

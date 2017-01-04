@@ -13,7 +13,7 @@ module.exports = {
 	resolve: {
 		// Tell webpack to look for required files in node
 		modulesDirectories: ['node_modules'],
-		extensions: ['', '.js', '.jsx', '.json', '.styl', '.pug']
+		extensions: ['', '.js', '.jsx', '.json']
 	},
 	module: {
 		// npParse === aframe Bugfix for console warning
@@ -54,5 +54,9 @@ module.exports = {
 				'css': [ __dirname + '/app/style.styl']
 			}
 		})
-	]
+	],
+	devServer: {
+		host: '0.0.0.0',
+		port: 8090
+	}
 };
