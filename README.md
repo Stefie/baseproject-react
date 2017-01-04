@@ -16,3 +16,5 @@ https://pugjs.org/ (formerly JADE)
 
 ## Using A-Frame VR
 https://aframe.io/
+
+with aframe-react https://github.com/ngokevin/aframe-react
