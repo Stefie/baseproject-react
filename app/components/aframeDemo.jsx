@@ -10,7 +10,14 @@ class VRScene extends React.Component {
 	render() {
 		return (
 			<Scene embedded>
-				<Entity text={{text: 'AFRAME-READY'}} position="-2.7 1 -3" material="color: #678782;" />
+				<Entity text={{text: 'AFRAME-READY'}} position="-2.7 1.3 -3" material="color: #678782;">
+					<a-animation attribute="rotation"
+						dur="10000"
+						fill="forwards"
+						to="-360 0 0"
+						repeat="indefinite"></a-animation>
+				</Entity>
+				<Entity light={{type: 'spot', color: '#ffffff'}}/>
 				<a-sky color="#f0f0f0"></a-sky>
 			</Scene>
 		);
