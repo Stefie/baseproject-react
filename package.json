@@ -15,7 +15,8 @@
     "babel",
     "react",
     "playground",
-    "webpack"
+    "webpack",
+		"aframe"
   ],
   "author": "Stefanie Doll",
   "license": "ISC",
