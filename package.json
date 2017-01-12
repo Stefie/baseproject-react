@@ -16,15 +16,16 @@
     "react",
     "playground",
     "webpack",
-		"aframe"
+    "aframe"
   ],
   "author": "Stefanie Doll",
   "license": "ISC",
   "devDependencies": {
     "aframe": "^0.4.0",
+    "aframe-bmfont-text-component": "^0.1.4",
     "aframe-react": "^3.4.1",
-    "aframe-text-component": "^0.4.0",
     "autoprefixer": "^6.6.1",
+    "autoprefixer-stylus": "^0.13.0",
     "babel-cli": "^6.18.0",
     "babel-core": "^6.18.2",
     "babel-loader": "^6.2.7",
@@ -39,8 +40,8 @@
     "postcss-loader": "^1.2.1",
     "poststylus": "^0.2.3",
     "pug": "^2.0.0-beta6",
-    "rucksack-css": "^0.9.1",
     "pug-loader": "^2.3.0",
+    "rucksack-css": "^0.9.1",
     "style-loader": "^0.13.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^2.3.1",
