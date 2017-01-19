@@ -1,4 +1,4 @@
 node_modules
-+ added npm-debug.log to gitignore
+npm-debug.log
 .tmp
 .DS_Store
