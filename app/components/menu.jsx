@@ -1,16 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-require('./../assets/styles/components/_pageNav.styl');
-
-class Menu extends React.Component {
-	render() {
-		const menuItems = ['Some', 'Menu', 'Items'];
-		return (
-			<ul>
-				{menuItems.map( (menuItem, index) => <li key={index}>{menuItem}</li>)}
-			</ul>
-		);
-	}
+export default class Menu extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    const menuItems = ['Some', 'Menu', 'Items'];
+    return (
+      <nav className="page-nav">
+        <ul>
+          {menuItems.map( (menuItem, index) => <li key={index}>{menuItem}</li>)}
+        </ul>
+      </nav>
+    );
+  }
 }
-ReactDOM.render(<Menu/>, document.getElementById('menu'));

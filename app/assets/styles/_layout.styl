@@ -1,38 +1,40 @@
 body
-	background-color $bodyBgColor
-	color $fontColor
-	font-family $fontFamiliyBase
-	min-height 100vh
-	flex-flow row wrap
-	justify-content flex-start
-	align-items flex-start
-	display flex
+  background-color $bodyBgColor
+  color $fontColor
+  font-family $fontFamiliyBase
 
 h1, h2, h3, h4,
 .h1, .h2, .h3, .h4
-	font-family $fontFamilyHighlight
-	font-weight 900
+  font-family $fontFamilyHighlight
+  font-weight 900
 
 h1
-	font-size 50px
-	text-align center
-	text-transform uppercase
-	color $colorPrimary
-	margin $layoutSpaceHalf
+  font-size 50px
+  text-align center
+  text-transform uppercase
+  color $colorPrimary
+  margin $layoutSpaceHalf
 
 .page-wrapper
+  min-height 100vh
+  flex-flow row wrap
+  justify-content flex-start
+  align-items flex-start
+  display flex
+
+.content-wrapper
 .page-footer
-	flex 1 100%
-	max-width 100%
+  flex 1 100%
+  max-width 100%
 
 .page-content
-	padding $layoutSpace
-	text-align center
+  padding $layoutSpace
+  text-align center
 
 .page-footer
-	//height $footerHeight
-	align-self flex-end
+  //height $footerHeight
+  align-self flex-end
 
 .layout-section
-	+ .layout-section
-		margin-top $layoutSpaceDouble
+  + .layout-section
+    margin-top $layoutSpaceDouble

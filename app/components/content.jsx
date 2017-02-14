@@ -1,13 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-class Content extends React.Component {
-	render() {
-		return (
-			<div>
-				<p>Dummy React component</p>
-			</div>
-		);
-	}
+export default class Content extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      <main className="page-content">
+        <div>
+          <h1>Headline Component</h1>
+          <p>Dummy React component</p>
+        </div>
+      </main>
+    );
+  }
 }
-ReactDOM.render(<Content/>, document.getElementById('content'));
